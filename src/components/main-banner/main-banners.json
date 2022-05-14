@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_main_banner_main_banners",
+  "info": {
+    "displayName": "Main banners",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cover_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tag.tag"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "spotlight": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
